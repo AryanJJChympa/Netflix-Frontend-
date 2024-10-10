@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,700;1,900&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.main {
+    height: 664px;
+    background-image: url(assets/Images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .box {
+    height: 664px;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* --------------HERO BODY---------------- */
+
+
+@media screen and (max-width : 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: start;
+    }
+}
+
+.hero {
+    font-family: "Varela", sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero>:nth-child(1) {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.seperation {
+    /* This is the seperation that seperates each section of contents*/
+    height: 7px;
+    background-color: rgb(54, 52, 52);
+    position: relative;
+    z-index: 20;
+}
+
+/* -----------------NAV BUTTONS -----------*/
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: 1px solid gray;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    height: 45px;
+    border: none;
+}
+
+@media screen and (max-width:600px) {
+    .btn-red {
+        flex-wrap: wrap;
+    }
+}
+
+/* --------------Hero BUTTON --------------- */
+.btn-red-sm {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    height: 45px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main input {
+    color: white;
+    padding: 7px 101px 8px 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.7);
+}
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width : 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+}
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0px;
+    width: 400px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 58px;
+    font-weight: 900;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* ------------FAQ -------------- */
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+}
+
+.accordion {
+    color: white;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s, padding 0.5s;
+}
+
+.accordion label:hover {
+    background: #393939;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    pad: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.faq button {
+    position: static;
+}
+
+
+/*--------FOOTER--------*/
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
